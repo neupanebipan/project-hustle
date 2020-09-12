@@ -1,0 +1,42 @@
+<html>
+<head>
+     <tittle></tittle>
+     <link rel="stylesheet" type="text/css" href="style.css">
+		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+<body>
+
+  <div class="bgimage">
+		<div class="menu">
+			
+			<div class="leftmenu">
+			   <img src="logo.png" alt="">
+			</div>
+
+
+			      <div class="rightmenu">
+                        <ul>
+                        <li id="firstlist"> Home </li>
+                        <li> Programs </li>
+                        <li> Trainers </li>
+                        <li> Services </li>
+                        <li> Blogs </li>
+                        <li> Contact </li>
+                        <li> <img src="log.png" alt=""></li>
+                        </ul>
+
+			      </div>
+
+    </div>                
+      <div class="text">
+			<h4> FITTER • HEALTHIER • HAPPIER </h4>
+			<h1> HUSTLE TO GAIN MORE MUSCLE </h1>
+            </div>
+  </div>
+
+
+
+</body>
+
+</html>

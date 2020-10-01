@@ -1,0 +1,42 @@
+.tranning{
+    padding-top:100px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+}
+
+.trainer{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    height: auto;
+    text-align:center;
+    margin: 0px 65px;
+}
+
+.fit{
+    padding-bottom: 50px;
+}
+
+.right{
+    background-color: rgba(255,255,255,0.1);
+    font-weight:lighter;
+    line-height: auto;
+    text-align:center;
+
+}
+.both:hover{
+    transition:1s;
+    color:orange;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.both{
+    transition: 1s;
+    color:white;
+    padding:50% 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.trainer_one{
+    
+}

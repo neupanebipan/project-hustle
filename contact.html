@@ -1,30 +1,31 @@
+{% load static %}
 <html>
 <head>
      <tittle></tittle>
-     <link rel="stylesheet" type="text/css" href="main.css">
-     <link rel="stylesheet" type="text/css" href="contact.css">
-		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
-     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/contact.css'%}">
+		 <link href="{% static 'http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic'%}" rel='stylesheet'>
+     <link href="{% static 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans'%}" rel="stylesheet">
 </head>
 <body>
 
 		<div class="menu">
 			
 			<div class="leftmenu">
-			   <img src="logo.png" alt="">
+			   <img src="{% static 'photo/logo.png'%}" alt="">
 			</div>
 
 
 			      <div class="rightmenu">
                   <ul>
-                     <li><a href="index.html"> Home </a></li>
-                     <li><a href="programs.html"> Programs </a></li>
-                     <li><a href="trainers.html">Trainers</a>  </li>
-                     <li><a href="services.html">Services</a>  </li>
-                     <li><a href="blogs.html">Blogs</a>  </li>
-                     <li class="active"><a href="contact.html">Contact</a>  </li>
-                     <li><a href="log.html">Login</a></li>
-                     <li><a href="signup.html">Signup</a></li>
+                    <li><a href="{% url 'index' %}"> Home </a></li>
+                    <li><a href="{% url 'programs' %}"> Programs </a></li>
+                    <li><a href="{% url 'trainers' %}">Trainers</a>  </li>
+                    <li><a href="{% url 'services' %}">Services</a>  </li>
+                    <li class="active"><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'register' %}">Signup</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                 </ul>
                   </ul>
 			      </div>
             </div>
@@ -33,76 +34,59 @@
              <div class="row">
                <div class="column">
                  <div class="card">
-                   <img src="" alt="Bipan" style="width:100%">
+                   <img class="prerana" src="{% static 'photo/ds.jpg'%}" alt="Prerana" style="width:100%">
                    <div class="container">
-                     <h2>Bipan Neupane</h2>
-                     <p class="title">Backend developer</p>
-                     <p>Lekhni yeha kk garyo aafno barema sabai halka fulka.</p>
-                     <a href="mailto:tkandel37@gmail.com"><button class="gamil"><a href="mailto:tkandel37@gmail.com">Gmail</a></button></a>
-                     <a href="https://www.facebook.com/"> <button class="button"><a href="https://www.facebook.com/">Facebook</a></button></a>
+                     <h2>Dikesh Shrestha</h2>
+                     <p class="title">Frontend developer</p>
+                     <a href="dikeshshrestha@gmail.com"><button class="gamil"><a href="dikeshshrestha@gmail.com">Gmail</a></button></a>
+                     <a href="{% static 'https://www.facebook.com'%}"> <button class="button"><a href="{% static 'https://www.facebook.com'%}">Facebook</a></button></a>
                    </div>
                  </div>
                </div>
                <div class="column">
                  <div class="card">
-                   <img src="" alt="Bipan" style="width:100%">
+                   <img class="prerana" src="{% static 'photo/dc.jpg'%}" alt="Dishna" style="width:100%">
                    <div class="container">
-                     <h2>Bipan Neupane</h2>
-                     <p class="title">Backend developer</p>
-                     <p>Lekhni yeha kk garyo aafno barema sabai halka fulka.</p>
-                     <a href="mailto:tkandel37@gmail.com"><button class="gamil"><a href="mailto:tkandel37@gmail.com">Gmail</a></button></a>
-                     <a href="https://www.facebook.com/"> <button class="button"><a href="https://www.facebook.com/">Facebook</a></button></a>
+                     <h2>Dishna Chhantyal</h2>
+                     <p class="title">Frontend developer</p>
+                     <a href="{% static 'dishnachhantyal'%}"><button class="gamil"><a href="{% static 'mailto:tkandel37@gmail.com'%}">Gmail</a></button></a>
+                     <a href="{% static 'https://www.facebook.com/dishna.chhantyal'%}'"> <button class="button"><a href="{% static 'https://www.facebook.com/dishna.chhantyal'%}'">Facebook</a></button></a>
                    </div>
                  </div>
                </div>
                <div class="column">
                  <div class="card">
-                   <img src="" alt="Bipan" style="width:100%">
+                   <img class="prerana" src="{% static 'photo/bp.jpg'%}" alt="Bipan" style="width:100%">
+                   <div class="container">
+                     <h2>Bibek Palanchoke</h2>
+                     <p class="title">Frontend developer</p>
+                     <a href="{% static 'mailto:tkandel37@gmail.com'%}"><button class="gamil"><a href="{% static 'mailto:tkandel37@gmail.com'%}">Gmail</a></button></a>
+                     <a href="{% static 'https://www.facebook.com/'%}"> <button class="button"><a href="{% static 'https://www.facebook.com/'%}'">Facebook</a></button></a>
+                   </div>
+                 </div>
+               </div>
+               <div class="column Bibek">
+                 <div class="card">
+                   <img class="prerana" src="{% static 'photo/pp.jpg'%}" alt="Bipan" style="width:100%">
+                   <div class="container">
+                     <h2>Prerana Pandey</h2>
+                     <p class="title">Backend developer</p>
+                     <a href="mailto:tkandel37@gmail.com"><button class="gamil"><a href="mailto:tkandel37@gmail.com">Gmail</a></button></a>
+                     <a href="https://www.facebook.com/"> <button class="button"><a href="https://www.facebook.com/">Facebook</a></button></a>
+                   </div>
+                 </div>
+               </div>
+               <div class="column Bibek">
+                 <div class="card">
+                   <img class="prerana" src="{% static 'photo/bn.jpg'%}" alt="Bipan" style="width:100%">
                    <div class="container">
                      <h2>Bipan Neupane</h2>
                      <p class="title">Backend developer</p>
-                     <p>Lekhni yeha kk garyo aafno barema sabai halka fulka.</p>
                      <a href="mailto:tkandel37@gmail.com"><button class="gamil"><a href="mailto:tkandel37@gmail.com">Gmail</a></button></a>
                      <a href="https://www.facebook.com/"> <button class="button"><a href="https://www.facebook.com/">Facebook</a></button></a>
                    </div>
                  </div>
-               </div>
-               <div class="column">
-                 <div class="card">
-                   <img src="" alt="Bipan" style="width:100%">
-                   <div class="container">
-                     <h2>Bipan Neupane</h2>
-                     <p class="title">Backend developer</p>
-                     <p>Lekhni yeha kk garyo aafno barema sabai halka fulka.</p>
-                     <a href="mailto:tkandel37@gmail.com"><button class="gamil"><a href="mailto:tkandel37@gmail.com">Gmail</a></button></a>
-                     <a href="https://www.facebook.com/"> <button class="button"><a href="https://www.facebook.com/">Facebook</a></button></a>
-                   </div>
-                 </div>
-               </div>
-               <div class="column">
-                 <div class="card">
-                   <img src="" alt="Bipan" style="width:100%">
-                   <div class="container">
-                     <h2>Bipan Neupane</h2>
-                     <p class="title">Backend developer</p>
-                     <p>Lekhni yeha kk garyo aafno barema sabai halka fulka.</p>
-                     <a href="mailto:tkandel37@gmail.com"><button class="gamil"><a href="mailto:tkandel37@gmail.com">Gmail</a></button></a>
-                     <a href="https://www.facebook.com/"> <button class="button"><a href="https://www.facebook.com/">Facebook</a></button></a>
-                   </div>
-                 </div>
-               </div>
-               <div class="column">
-                 <div class="card">
-                   <img src="" alt="Bipan" style="width:100%">
-                   <div class="container">
-                     <h2>Trilochan Kandel</h2>
-                     <p class="title">Backend developer</p>
-                     <p>Lekhni yeha kk garyo aafno barema sabai halka fulka.</p>
-                     <a href="mailto:tkandel37@gmail.com"><button class="gamil"><a href="mailto:tkandel37@gmail.com">Gmail</a></button></a>
-                     <a href="https://www.facebook.com/"> <button class="button"><a href="https://www.facebook.com/">Facebook</a></button></a>
-                   </div>
-                 </div>
-               </div>
+                </div>
              </div>
  </body>
 </html>

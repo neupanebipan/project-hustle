@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+{% block title %}
+        {{ post.title_tag }}
+{% endblock %}
+{% block content %}
+
+<h1>{{ post.title }}</h1>
+<small>By: {{post.author.get_full_name_name|default:post.author.username}}</small><br/>
+<hr>
+
+{{ post.body }}
+
+<br/><br/>
+<a href="{% url 'blogs' %}" class="btn btn-secondary">Back</a>
+
+{% endblock %}

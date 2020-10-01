@@ -1,0 +1,145 @@
+.wrapper
+{
+	padding-top:100px;;
+	opacity:0.8;
+    color: #ffffff;
+}
+.wrapper>h1
+{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:45px;
+	text-align: center;
+	margin:30px 0 100px 0%;
+	color:white;
+}
+
+.team{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+
+}
+.team .team_member{
+	background: #fff;
+	margin:5px;
+	margin-bottom: 50px;
+	width: 300px;
+	padding:20px; 
+	line-height: 20px;
+	color: #8e8b8b;
+	position: relative;
+
+}
+.team .team_member h3{
+	color: #000000;
+	font-size: 25px;
+	margin-top: 50px;
+
+
+}
+.team .team_member p.role
+{
+	color: #ccc;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin:12px 0; 
+}
+.team .team_member .team_img
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border:5px solid #000000;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translate(-50%);
+	background: #fff;
+}
+
+.team .team_member .team_img img
+{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	border-radius: 50%;
+	object-fit: cover;
+	position: absolute; 
+	left: -10px; top: -10px;
+}
+
+.wrapper1
+{
+	margin-top: 0%;
+	opacity:0.8;
+   color: #ffffff;
+}
+.wrapper1>h1
+{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:45px;
+	text-align: center;
+	margin:30px 0 100px 0%;
+	color:white;
+}
+
+.team1{
+	display: flex;
+	text-align: center;
+	width: auto;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+
+}
+.team1 .team_member1{
+	background: #fff;
+	margin:5px;
+	margin-bottom: 50px;
+	width: 300px;
+	padding:20px; 
+	line-height: 20px;
+	color: #8e8b8b;
+	position: relative;
+
+}
+.team1 .team_member1 h3{
+	color: #000000;
+	font-size: 25px;
+	margin-top: 50px;
+
+
+}
+.team1 .team_member1 p.role1
+{
+	color: #ccc;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin:12px 0; 
+}
+.team1 .team_member1 .team_img1
+{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border:5px solid #000000;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+	transform: translate(-50%);
+	background: #fff;
+}
+
+.team1 .team_member1 .team_img1 img
+{
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	border-radius: 50%;
+	object-fit: cover;
+	position: absolute; 
+	left: -10px; top: -10px;
+}

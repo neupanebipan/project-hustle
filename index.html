@@ -1,51 +1,57 @@
+{% load static %}
+
 <html>
 <head>
      <tittle></tittle>
-     <link rel="stylesheet" type="text/css" href="main.css">
-     <link rel="stylesheet" type="text/css" href="index.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css'%}">
+     <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'%}">
 </head>
-<body>
-    <div class="menu">
-      <div class="leftmenu">
-         <img src="logo.png" alt="">
-      </div>
-            <div class="rightmenu">
+<body>  
+      <style>
+         .hello-msg{
+            font-size: 18px;
+            color: black;
+            margin-right: 20px;
+         }
+      </style>
+		<div class="menu">
+			<div class="leftmenu">
+			   <img src="{% static 'photo/logo.png'%}" alt="">
+			</div>
+			      <div class="rightmenu">
               <ul>
-                <li class="active"><a href="index.html"> Home </a></li>
-                <li><a href="programs.html"> Programs </a></li>
-                <li><a href="trainers.html">Trainers</a>  </li>
-                <li><a href="services.html">Services</a>  </li>
-                <li><a href="blogs.html">Blogs</a>  </li>
-                <li><a href="contact.html">Contact</a>  </li>
-                <li><a href="log.html">Login </a></li>
-                <li><a href="signup.html">Signup</a></li>
+               <li class="active"><a href="{% url 'index' %}"> Home </a></li>
+               <li><a href="{% url 'programs' %}"> Programs </a></li>
+               <li><a href="{% url 'trainers' %}">Trainers</a></li>
+               <li><a href="{% url 'services' %}">Services</a></li>
+               <li><a href="{% url 'blogs' %}">Blogs</a></li>
+               <li><a href="{% url 'contact' %}">Contact</a> </li>
+               <li><a href="{% url 'register' %}">Signup</a></li>
+               <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
              </ul>
-            </div>
+			      </div>
     </div>        
- <div class="member">       
-    <div class="slogan">
-      <h4> FITTER • HEALTHIER • HAPPIER </h4>
-      <h1> HUSTLE TO GAIN MORE MUSCLE </h1>
-      </div>
-      <div class="icon">
-         <a href="https://www.facebook.com" class="fa fa-facebook"></a>
-         <a href="https://www.twitter.com" class="fa fa-twitter"></a> 
-         <a href="https://www.instagram.com" class="fa fa-instagram"></a> 
-         <a href="https:/www.youtube.com" class="fa fa-youtube"></a> 
-         
-      </div>
-   </div>
-    <div class="container">
-         <div class="container1">
-            <div class="left text both">
-              <h1></h1>
-            </div>
-         </div>
-
-
-      </div>
-   </div>
-</body>
-
-</html>
+    <div class="member">       
+      <div class="slogan">
+        <h4> FITTER • HEALTHIER • HAPPIER </h4>
+        <h1> HUSTLE TO GAIN MORE MUSCLE </h1>
+        </div>
+     </div>
+      <div class="container">
+           <div class="container1">
+              <div class="left text both">
+                <h1></h1>
+              </div>
+           </div>
+  
+  
+        </div>
+     </div>
+     <span class="hello-msg">Hello! {{request.user}}</span>
+     <span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+  </body>
+  
+  </html>
+  

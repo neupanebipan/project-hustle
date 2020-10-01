@@ -1,0 +1,99 @@
+@import url("htttps://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+	
+*
+	{
+		margin:0;
+ 	    padding:0;
+ 	    font-family: 'Poppins', sans-serif;
+	}
+ 
+.hero{
+ 	display: flex;
+ 	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container
+{ 
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+    flex-wrap: wrap;
+	
+}
+
+.box
+{
+	position: relative;
+	width: 250px;
+	background: #fff;
+	padding: 100px 40px 80px;
+	box-shadow: 0 15px 45px rgba(0,0,0,.1);
+}
+ 
+.box  hover
+{
+ 	content: '';
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	width: 100%;
+ 	height: 100%;
+    color: orange;
+    background-color: rgba(0, 0, 0, 0.7);;
+ 	transform: scaleY(0);
+ 	transform-origin: top;
+ 	transition: transform 0.5s;
+
+}
+
+.box hover before
+{
+ 	transform: scaleY(1);
+ 	transform-origin: bottom;
+ 	transition: transform 0.5s;
+ 	transition: 1s;
+    color: orange;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+ .box h2
+ {
+ 	position: absolute;
+ 	left: 40px;
+ 	top: 60px;
+ 	font-size: 4em;
+ 	font-weight: 800;
+ 	z-index: 1;
+ 	opacity: 0.2;
+ 	transition: 0.5s;
+ }
+
+ .box:hover h2
+ {
+ 	opacity:1;
+ 	color: #fff;
+ 	transform: translateY(-40px);
+ }
+
+ .box h3{
+ 	position: relative;
+ 	font-size: 1.5em;
+ 	z-index: 2;
+ 	color: #333;
+ 	transition: 0.5s;
+ }
+
+ .box p
+ {
+ 	position: relative;
+ 	z-index: 2;
+ 	color: #555;
+ 	transition: 0.5s;
+ }
+ .box:hover h3,
+ .box hover p
+ {
+ 	color: #fff;
+ }

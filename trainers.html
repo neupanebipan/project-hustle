@@ -1,30 +1,31 @@
+{% load static %}
 <html>
 <head>
      <tittle></tittle>
-     <link rel="stylesheet" type="text/css" href="main.css">
-     <link rel="stylesheet" type="text/css" href="trainers.css">
-		 <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet'>
-     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css'%}">
+     <link rel="stylesheet" type="text/css" href="{% static 'css/trainers.css'%}">
+		 <link href="{% static 'http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700,400italic'%}" rel='stylesheet'>
+     <link href="{% static 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans'%}" rel="stylesheet">
 </head>
 <body>
 
 		<div class="menu">
 			
 			<div class="leftmenu">
-			   <img src="logo.png" alt="">
+			   <img src="{% static 'photo/logo.png'%}" alt="">
 			</div>
 
 
 			      <div class="rightmenu">
                   <ul>
-                     <li><a href="index.html"> Home </a></li>
-                     <li><a href="programs.html"> Programs </a></li>
-                     <li class="active"><a href="trainers.html">Trainers</a>  </li>
-                     <li><a href="services.html">Services</a>  </li>
-                     <li><a href="blogs.html">Blogs</a>  </li>
-                     <li><a href="contact.html">Contact</a>  </li>
-                     <li> <a href="log.html"> Login</a></li>
-                     <li><a href="signup.html">Signup</a></li>
+                     <li><a href="{% url 'index' %}"> Home </a></li>
+                     <li><a href="{% url 'programs' %}"> Programs </a></li>
+                     <li class="active"><a href="{% url 'trainers' %}">Trainers</a>  </li>
+                     <li><a href="{% url 'services' %}">Services</a>  </li>
+                     <li><a href="{% url 'contact' %}">Contact</a> </li>
+                     <li><a href="{% url 'register' %}">Signup</a></li>
+                     <li><a href="{% url 'login' %}">Login</a></li>
+                  </ul>
                   </ul>
 
                </div>
